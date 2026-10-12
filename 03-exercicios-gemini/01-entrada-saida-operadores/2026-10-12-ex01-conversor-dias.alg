@@ -21,5 +21,5 @@ inicio
    
    escreval("TOTAL DE HORAS: ", conv_horas, " h")
    escreval("TOTAL DE MINUTOS: ", conv_min,  " min")
-   escreval("TORAL DE SEGUNDOS: ", conv_seg,  " s")
+   escreval("TOTAL DE SEGUNDOS: ", conv_seg,  " s")
 fimalgoritmo
