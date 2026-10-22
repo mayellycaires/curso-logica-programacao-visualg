@@ -1,23 +1,33 @@
-algoritmo "AprovadoouReprovado"
-// DESAFIO DA AULA 07: ESTRUTURAS CONDICIONAIS.
+algoritmo "ExeExtra001_VerificadorAptidaoVoto"
+
+// =============================================================
+// Origem: Exercício Extra via Gemini
+// Módulo: 02-estruturas-condicionais
+// Nível: Fácil
+// Data: 22/10/2026
+// Enunciado: Leia o ano atual e o ano de nascimento (inteiros).
+// Calcule a idade e use a estrutura condicional 'se/senao' para
+// verificar se a pessoa tem 16 anos ou mais. Exiba "APTA A VOTAR"
+// ou "NÃO APTA A VOTAR".
+// =============================================================
 var
-   N1, N2, Media : Real
+    ano_atual, ano_nasc, idade :inteiro
 inicio
-      escrevaL("---------------------")
-      escrevaL("ESCOLA JAVALI CANSADO")
-      escrevaL("---------------------")
-      escreva("PRIMEIRA NOTA: ")
-      leia(N1)
-      escreva("SEGUNDA NOTA: ")
-      leia(N2)
-      Escreval("---------------------")
+      escreval("-----------------------------------")
+      escreval("VERIFICADOR DE APTIDÃO PARA VOTAR")
+      escreval("-----------------------------------")
+      escreva("ANO ATUAL: ")
+      leia(ano_atual)
+      escreva("ANO DE NASCIMENTO: ")
+      leia(ano_nasc)
       
-      Media <- (N1 + N2)/2
-      escreval(" MÉDIA: ", Media)
-      Se(Media >= 7)entao
-         escreval(" ALUNO(A) APROVADO!")
+      idade <- ano_atual - ano_nasc
+      escreval("------------ RESULTADO ------------")
+      escreval(" IDADE: ", idade)
+      Se(idade >= 16 )entao
+         escreval(" STATUS: APTO A VOTAR!")
       Senao
-          escreval(" ALUNO(A) REPROVADO!")
+         escreval(" STATUS: NÃO APTO A VOTAR!")
       FimSe
-      escreva("----------------------")
+      escreva("------------------------------------")
 fimalgoritmo
